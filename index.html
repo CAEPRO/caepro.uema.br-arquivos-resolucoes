@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CAEPRO - Centro Acadêmico</title>
+  <link rel="icon" href="bc3e0ba4-d7ed-4e65-b3ec-5a38038e5a47.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <style>
+    :root {
+      --orange: #f37321;
+      --dark-blue: #011b47;
+      --white: #ffffff;
+      --font: 'Montserrat', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: linear-gradient(to bottom, var(--orange) 40%, var(--dark-blue) 60%);
+      color: var(--white);
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 10px;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .logo {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 5px;
+      text-shadow: 1px 1px 2px #00000033;
+    }
+
+    p.subtitle {
+      font-size: 1rem;
+      margin-bottom: 25px;
+      font-weight: 500;
+      text-shadow: 1px 1px 3px #00000033;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px auto;
+      padding: 15px 20px;
+      width: 90%;
+      max-width: 400px;
+      background-color: var(--white);
+      color: #000;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      box-shadow: 0 5px 0 #ccc;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .link-btn i {
+      width: 30px;          /* largura fixa para o ícone */
+      text-align: left;     /* ícone alinhado à esquerda */
+      font-size: 1.4rem;
+      flex-shrink: 0;       /* não encolher */
+    }
+
+    .link-btn .btn-text {
+      flex: 1;              /* ocupa o restante do espaço */
+      text-align: center;   /* texto centralizado */
+    }
+
+    .link-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 7px 10px rgba(0,0,0,0.2);
+    }
+
+    /* Social icons footer */
+    .social-icons {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .social-icons a {
+      color: var(--white);
+      font-size: 1.6rem;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: var(--orange);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.85rem;
+      color: #eeeeeeaa;
+      font-weight: 500;
+      text-shadow: 1px 1px 2px #00000033;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      .link-btn {
+        font-size: 0.95rem;
+        padding: 12px 18px;
+        width: 95%;
+      }
+      .logo {
+        width: 120px;
+      }
+      .social-icons {
+        gap: 20px;
+      }
+      .social-icons a {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://instagram.fbsb9-1.fna.fbcdn.net/v/t51.2885-19/497356791_17850463329452899_808244954554773221_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMxIn0&_nc_ht=instagram.fbsb9-1.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2QFfEhEBCHDi0vwxbVU8uiOAlC6ZjqqcosNXFJ6WWUmhEUN4slCW3j55dNwYDF0TTpY&_nc_ohc=AOpHFSSpzmsQ7kNvwHx0CwQ&_nc_gid=tudIwrI5TrCBc0Nud9T-NA&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AfXCaV2E1lh5eXbVtBtJ5HLKtOJiA_ejP5Lyuwi9jVJ4Ww&oe=68993A1F&_nc_sid=7a9f4b" alt="CAEPRO" class="logo" />
+    <h1>Centro Acadêmico de Engenharia de Produção</h1>
+    <p class="subtitle">Links úteis, documentos e canais de comunicação</p>
+
+    <a href="https://link-da-ouvidoria.com" class="link-btn" target="_blank">
+      <i class="fas fa-bullhorn"></i>
+      <span class="btn-text">Ouvidoria CAEPRO</span>
+    </a>
+
+    <a href="https://www.uema.br/wp-content/uploads/2025/02/Calendario-Academico-2025-atualizado.pdf" class="link-btn" target="_blank">
+      <i class="fas fa-calendar-alt"></i>
+      <span class="btn-text">Calendário Acadêmico 2025</span>
+    </a>
+
+    <a href="https://drive.google.com/file/d/1KDYCz0B1cSxMdfKix97UvPhMdhZj8yDb/view?usp=sharing" class="link-btn" target="_blank">
+      <i class="fas fa-file-alt"></i>
+      <span class="btn-text">Estatuto CAEPRO</span>
+    </a>
+
+    <a href="https://link-do-drive.com/regimento" class="link-btn" target="_blank">
+      <i class="fas fa-file-contract"></i>
+      <span class="btn-text">Regimento dos Cursos de Graduação (UEMA)</span>
+    </a>
+
+    <a href="https://link-do-drive.com/arquivos-resolucoes" class="link-btn" target="_blank">
+      <i class="fas fa-folder-open"></i>
+      <span class="btn-text">Arquivos e Resoluções</span>
+    </a>
+
+    <a href="https://forms.gle/formulario-inscricao" class="link-btn" target="_blank">
+      <i class="fas fa-pen-square"></i>
+      <span class="btn-text">Formulário de Inscrição</span>
+    </a>
+
+    <a href="mailto:caepro.uema@gmail.com" class="link-btn" target="_blank">
+      <i class="fas fa-envelope"></i>
+      <span class="btn-text">E-mail do CAEPRO</span>
+    </a>
+
+    <a href="https://wa.me/5598999999999" class="link-btn" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+      <span class="btn-text">Grupo de WhatsApp - CAEPRO | COMUNICAÇÕES</span>
+    </a>
+
+    <div class="social-icons">
+      <a href="https://instagram.com/caepro.uema" target="_blank" aria-label="Instagram CAEPRO">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="mailto:caepro@uema.br" target="_blank" aria-label="E-mail CAEPRO">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://wa.me/5598999999999" target="_blank" aria-label="WhatsApp CAEPRO">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <footer>
+      © 2025 CAEPRO - UEMA | Desenvolvido por Diego Reinaldo
+    </footer>
+  </div>
+</body>
+</html>
